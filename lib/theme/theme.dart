@@ -5,11 +5,8 @@ var kLightTheme = ThemeData(
   canvasColor: Colors.transparent,
   primaryColor: Colors.white,
   brightness: Brightness.light,
-  accentColor: config.Colors().accentColor(1),
   focusColor: config.Colors().mainColor(1),
   hintColor: config.Colors().secondColor(1),
-  accentTextTheme:
-      TextTheme(headline6: TextStyle(fontFamily: "Red Hat Display")),
   textTheme: TextTheme(
     button: TextStyle(
       fontFamily: 'Red Hat Display',
@@ -72,7 +69,7 @@ var kLightTheme = ThemeData(
       fontWeight: FontWeight.w400,
       color: config.Colors().accentColor(1),
     ),
-  ),
+  ), colorScheme: ColorScheme.fromSwatch().copyWith(secondary: config.Colors().accentColor(1)),
 );
 
 // var kDarkTheme = ThemeData(

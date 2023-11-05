@@ -2,7 +2,6 @@ import 'package:elearning/theme/box_icons_icons.dart';
 import 'package:elearning/ui/widgets/card.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart' as material;
-import 'package:flutter/services.dart';
 
 class TopBar extends StatefulWidget {
   const TopBar({
@@ -83,9 +82,9 @@ class _TopBarState extends State<TopBar> {
               enableInteractiveSelection: true,
               controller: widget.controller,
               expands: false,
-              inputFormatters: [
-                BlacklistingTextInputFormatter.singleLineFormatter
-              ],
+              // inputFormatters: [
+              //   BlacklistingTextInputFormatter.singleLineFormatter
+              // ],
               keyboardType: TextInputType.text,
               suffix: Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 8.0),
